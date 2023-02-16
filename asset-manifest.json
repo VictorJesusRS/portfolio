@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8e8167a2.css",
-    "main.js": "/portfolio/static/js/main.b0f32028.js",
+    "main.css": "/portfolio/static/css/main.76cf9be5.css",
+    "main.js": "/portfolio/static/js/main.7c7803c3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/thumb.png": "/portfolio/static/media/thumb.56fcd7e3ffef537e9de7.png",
     "static/media/Spain-banner.svg": "/portfolio/static/media/Spain-banner.df284495e9b353e26682c78d780c5f27.svg",
@@ -27,13 +27,13 @@
     "static/media/Vuetify-logo.svg": "/portfolio/static/media/Vuetify-logo.4802839b4078c6ccaef34895464fef96.svg",
     "static/media/Vue-logo.svg": "/portfolio/static/media/Vue-logo.e765cdf8c0f4f0264f58f8af6b1dacf9.svg",
     "static/media/React-logo.svg": "/portfolio/static/media/React-logo.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "static/media/ban-outline.svg": "/portfolio/static/media/ban-outline.19345c71f12d509506a874d227f1eb6d.svg",
-    "main.8e8167a2.css.map": "/portfolio/static/css/main.8e8167a2.css.map",
-    "main.b0f32028.js.map": "/portfolio/static/js/main.b0f32028.js.map",
+    "static/media/ban-outline.svg": "/portfolio/static/media/ban-outline.271bc97017c8574a9d44ed9237a9b9f1.svg",
+    "main.76cf9be5.css.map": "/portfolio/static/css/main.76cf9be5.css.map",
+    "main.7c7803c3.js.map": "/portfolio/static/js/main.7c7803c3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e8167a2.css",
-    "static/js/main.b0f32028.js"
+    "static/css/main.76cf9be5.css",
+    "static/js/main.7c7803c3.js"
   ]
 }
