@@ -25,13 +25,17 @@ import SpainBanner from "../../assets/imgs/logos/Spain-banner.svg"
 import QoonterAppThumb from "../../assets/imgs/projects/Qoonter (Web App)/thumb.png"
 import PrismaWebThumb from "../../assets/imgs/projects/Prisma Agencia Creativa (Web Site)/thumb.png"
 import GettfordEcommerceThumb from "../../assets/imgs/projects/Gettford C.A. (E-commerce)/thumb.png"
+import PortafolioThumb from "../../assets/imgs/projects/Portfolio/thumb.png"
+import FiltrosRamirezThumb from "../../assets/imgs/projects/Filtros Rámirez (Tienda En Línea)/thumb.png"
+
+import PrivateThumb from "../../assets/imgs/icons/ban-outline.svg"
 
 const projects = [
     {
         name: 'Portafolio',
-        image: MySQLLogo,
-        domain: '',
-        url: '',
+        image: PortafolioThumb,
+        domain: '/',
+        url: '/',
         technologies: [
             'HTML',
             'CSS',
@@ -41,7 +45,7 @@ const projects = [
     },
     {
         name: 'Fletamos (Sitio Administrador)',
-        image: LaravelLogo,
+        image: PrivateThumb,
         domain: 'fletamos.com',
         url: 'fletamos.com',
         technologies: [
@@ -52,7 +56,7 @@ const projects = [
     },
     {
         name: 'Fletamos (Backend)',
-        image: PHPLogo,
+        image: PrivateThumb,
         domain: 'fletamos.com',
         url: 'fletamos.com',
         technologies: [
@@ -75,7 +79,7 @@ const projects = [
     },
     {
         name: 'Prisma Agencia Creativa (Sitio Administrador)',
-        image: NuxtLogo,
+        image: PrivateThumb,
         domain: 'prismagencia.com',
         url: 'prismagencia.com',
         technologies: [
@@ -101,7 +105,7 @@ const projects = [
     },
     {
         name: 'Filtros Rámirez (Tienda En Línea)',
-        image: VueLogo,
+        image: FiltrosRamirezThumb,
         domain: '',
         url: '',
         technologies: [
@@ -128,7 +132,7 @@ const projects = [
     },
     {
         name: 'Gettford C.A. (Sitio Administrador)',
-        image: JavascriptLogo,
+        image: PrivateThumb,
         domain: 'gettford.com',
         url: 'gettford.com',
         technologies: [

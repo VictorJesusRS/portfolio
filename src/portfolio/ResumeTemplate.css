@@ -534,7 +534,14 @@ section.main .about-me .contact-mail, header .contact-mail {
     cursor: pointer;
 }
 
-@media screen and ( min-width: 1150px) {  
+@media screen and ( min-width: 2000px) {  
+    section.main .technologies-layout {
+        display: grid;
+        grid-template-columns: repeat( 5, 1fr);
+    }
+}
+
+@media screen and ( min-width: 1150px) and ( max-width: 2000px) {  
     section.main .technologies-layout {
         display: grid;
         grid-template-columns: repeat( 4, 1fr);
@@ -605,8 +612,15 @@ section.main .portfolio .projects-layout .no-results {
     grid-column: 1/ 5;
 }
 
+@media screen and ( min-width: 2000px) {  
+    section.main .projects-layout {
+        display: grid;
+        grid-template-columns: repeat( 4, 1fr);
+    }
+}
 
-@media screen and ( min-width: 1150px) {  
+
+@media screen and ( min-width: 1150px) and ( max-width: 2000px) {  
     section.main .projects-layout {
         display: grid;
         grid-template-columns: repeat( 3, 1fr);

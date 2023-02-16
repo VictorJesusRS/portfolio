@@ -1,30 +1,30 @@
 import React from "react";
 import { ResumeTemplateUI } from "./ResumeTemplateUI";
 
-import JavascriptLogo from "../resources/imgs/logos/JavaScript-logo.svg"
-import VueLogo from "../resources/imgs/logos/Vue-logo.svg"
-import PHPLogo from "../resources/imgs/logos/PHP-logo.svg"
-import LaravelLogo from "../resources/imgs/logos/Laravel-logo.svg"
-import MySQLLogo from "../resources/imgs/logos/MySQL-logo.svg"
-import CSSLogo from "../resources/imgs/logos/CSS-logo.svg"
-import HTMLLogo from "../resources/imgs/logos/HTML-logo.svg"
-import JQueryLogo from "../resources/imgs/logos/JQuery-logo.svg"
-import TailwindLogo from "../resources/imgs/logos/Tailwind-logo.svg"
-import VuetifyLogo from "../resources/imgs/logos/Vuetify-logo.svg"
-import GitLogo from "../resources/imgs/logos/Git-logo.svg"
-import BootstrapLogo from "../resources/imgs/logos/Bootstrap-logo.svg"
-import NuxtLogo from "../resources/imgs/logos/Nuxt-logo.svg"
-import VuexLogo from "../resources/imgs/logos/Vuex-logo.png"
-// import AxiosLogo from "../resources/imgs/logos/Axios-logo.svg"
-import TypescriptLogo from "../resources/imgs/logos/Typescript-logo.svg"
-import ReactLogo from "../resources/imgs/logos/React-logo.svg"
+// import JavascriptLogo from "../resources/imgs/logos/JavaScript-logo.svg"
+// import VueLogo from "../resources/imgs/logos/Vue-logo.svg"
+// import PHPLogo from "../resources/imgs/logos/PHP-logo.svg"
+// import LaravelLogo from "../resources/imgs/logos/Laravel-logo.svg"
+// import MySQLLogo from "../resources/imgs/logos/MySQL-logo.svg"
+// import CSSLogo from "../resources/imgs/logos/CSS-logo.svg"
+// import HTMLLogo from "../resources/imgs/logos/HTML-logo.svg"
+// import JQueryLogo from "../resources/imgs/logos/JQuery-logo.svg"
+// import TailwindLogo from "../resources/imgs/logos/Tailwind-logo.svg"
+// import VuetifyLogo from "../resources/imgs/logos/Vuetify-logo.svg"
+// import GitLogo from "../resources/imgs/logos/Git-logo.svg"
+// import BootstrapLogo from "../resources/imgs/logos/Bootstrap-logo.svg"
+// import NuxtLogo from "../resources/imgs/logos/Nuxt-logo.svg"
+// import VuexLogo from "../resources/imgs/logos/Vuex-logo.png"
+// // import AxiosLogo from "../resources/imgs/logos/Axios-logo.svg"
+// import TypescriptLogo from "../resources/imgs/logos/Typescript-logo.svg"
+// import ReactLogo from "../resources/imgs/logos/React-logo.svg"
 
-import LinkedInLogo from "../resources/imgs/logos/LinkedIn-logo.svg"
-import TwitterLogo from "../resources/imgs/logos/Twitter-logo.svg"
-//import InstagramLogo from "../resources/imgs/logos/Instagram-logo.svg"
+// import LinkedInLogo from "../resources/imgs/logos/LinkedIn-logo.svg"
+// import TwitterLogo from "../resources/imgs/logos/Twitter-logo.svg"
+// //import InstagramLogo from "../resources/imgs/logos/Instagram-logo.svg"
 
-import USABanner from "../resources/imgs/logos/USA-banner.svg"
-import SpainBanner from "../resources/imgs/logos/Spain-banner.svg"
+// import USABanner from "../resources/imgs/logos/USA-banner.svg"
+// import SpainBanner from "../resources/imgs/logos/Spain-banner.svg"
 
 
 import { spanishContent } from "./data/languagues/spanish"
@@ -36,50 +36,46 @@ function ResumeTemplate( props )
 {   
     
     const changeToLanguage = ( language ) => {
-
+        languages.forEach(anotherLanguage => {
+            anotherLanguage.isActive = false
+        });
 
         switch ( language ) {
             case 'spanish':
                 setContent( spanishContent )
                 setProjects( spanishContent.projects )
                 spanishContent.languages.map( language => {
-                    if (language.tag === 'spanish') {
-                        language.isActive = true
-                    }else{
-                        language.isActive = false
-                    }
+                    language.isActive = true
                     return language
                 })
-                console.log( spanishContent.languages )
+                
                 setLanguages( spanishContent.languages )
                 setSearchedProjects( spanishContent.projects )
-                portfolioSearch( searchParams )
+
                 break;
             case 'english':
             default:
                 setContent( englishContent )
                 setProjects( englishContent.projects )
                 englishContent.languages.map( language => {
-                    if (language.tag === 'english') {
-                        language.isActive = true
-                    }else{
-                        language.isActive = false
-                    }
+                    language.isActive = true
                     return language
                 })
                 setLanguages( englishContent.languages )
                 setSearchedProjects( englishContent.projects )
-                portfolioSearch( searchParams )
+
                     break;
     
         }
+        console.log('aaa')
+        portfolioSearch( searchParams )
         
     }
 
     const defaultContentLanguague = () => {
         let content = {}
         if (/^es\b/.test(navigator.language)) {
-            console.log(spanishContent);
+           
             spanishContent.languages.map( language => {
                 if (language.tag === 'spanish') {
                     language.isActive = true
@@ -90,7 +86,7 @@ function ResumeTemplate( props )
             })
             content = spanishContent
         }else{
-            console.log(englishContent);
+            
             englishContent.languages.map( language => {
                 if (language.tag === 'english') {
                     language.isActive = true
@@ -112,6 +108,7 @@ function ResumeTemplate( props )
     const [ languages, setLanguages ] = React.useState( content.languages )
     //const languages = content.languages
     
+
     const socialNetworks = neutralContent.socialNetworks
     const technologies = neutralContent.technologies
     const learning = neutralContent.learning
@@ -128,6 +125,7 @@ function ResumeTemplate( props )
                     item.classList.remove('active')
                 })
                 currentTarget.classList.add('active')
+                
                 break;
 
             case 'home':
@@ -138,8 +136,12 @@ function ResumeTemplate( props )
                     item.classList.remove('active')
                 })
                 currentTarget.classList.add('active')
+                portfolioSearch( searchParams )
                 break;
+
         }
+
+       
         
     } 
 
@@ -180,20 +182,21 @@ function ResumeTemplate( props )
         
     }
 
-    const portfolioSearch = ( searchParams ) => {
+    const portfolioSearch = React.useCallback( ( searchParams ) => {
         
-        if ( Object.keys(searchParams).length === 0 ) {
-            setSearchedProjects( projects )   
-        }else{
+            if ( Object.keys(searchParams).length === 0 ) {
+                setSearchedProjects( projects )   
+            }else{
+                
+                const filteredProjects = projects.filter( ( project ) => {
+                    return project.technologies.includes(searchParams.technology)
+                })
+                
+                setSearchedProjects( filteredProjects ) 
+            }
             
-            const filteredProjects = projects.filter( ( project ) => {
-                return project.technologies.includes(searchParams.technology)
-            })
-            
-            setSearchedProjects( filteredProjects ) 
         }
-        
-    }
+    , [projects])
 
     const cleanSearchParams = ( name, value) => {
 
@@ -220,6 +223,10 @@ function ResumeTemplate( props )
         sibling.classList.remove('z-index-negative-1')
         navigator.clipboard.writeText( sibling.firstChild.innerHTML )
     }
+
+    React.useEffect( () => {
+        portfolioSearch( searchParams )
+    }, [ languages, searchParams, portfolioSearch ])
 
     return (
         <ResumeTemplateUI
