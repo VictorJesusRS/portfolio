@@ -1,2 +1,2 @@
 # portfolio
-Portfolio done with React.js
+Portfolio done to learn React.js
