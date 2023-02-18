@@ -1,21 +1,8 @@
 /**
- * Technologies logos
- */
-import JavascriptLogo from "../../assets/imgs/logos/JavaScript-logo.svg"
-import VueLogo from "../../assets/imgs/logos/Vue-logo.svg"
-import PHPLogo from "../../assets/imgs/logos/PHP-logo.svg"
-import LaravelLogo from "../../assets/imgs/logos/Laravel-logo.svg"
-import MySQLLogo from "../../assets/imgs/logos/MySQL-logo.svg"
-import NuxtLogo from "../../assets/imgs/logos/Nuxt-logo.svg"
-
-
-/**
  * Languages logos
  */
 import USABanner from "../../assets/imgs/logos/USA-banner.svg"
 import SpainBanner from "../../assets/imgs/logos/Spain-banner.svg"
-
-//import InstagramLogo from "../resources/imgs/logos/Instagram-logo.svg"
 
 /**
  * Projects imgs
@@ -141,6 +128,20 @@ const projects = [
             'MySQL'
         ]
     },
+    {
+        name: 'Secretaría de Carabobo (Web APP and Admin Site)',
+        image: PrivateThumb,
+        domain: '',
+        url: '',
+        technologies: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'PHP',
+            'Laravel',
+            'MySQL'
+        ]
+    },
 
 ]
 
@@ -172,7 +173,7 @@ const experience = {
     "content": [
         "Web Development in Frontend and Backend.",
         "Project management in teams of up to 3 people and alone (gathering of requirements, planning, execution, etc).",
-        "Meet the design team and what they want to present.",
+        "Implement the design made by the design team, matching their expectations.",
         "Remote work",
         "Outsourcing.",
         "Work with the team of multiple companies and internal team in a coordinated manner.",

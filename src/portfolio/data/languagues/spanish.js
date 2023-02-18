@@ -1,21 +1,6 @@
-import JavascriptLogo from "../../assets/imgs/logos/JavaScript-logo.svg"
-import VueLogo from "../../assets/imgs/logos/Vue-logo.svg"
-import PHPLogo from "../../assets/imgs/logos/PHP-logo.svg"
-import LaravelLogo from "../../assets/imgs/logos/Laravel-logo.svg"
-import MySQLLogo from "../../assets/imgs/logos/MySQL-logo.svg"
-import CSSLogo from "../../assets/imgs/logos/CSS-logo.svg"
-import HTMLLogo from "../../assets/imgs/logos/HTML-logo.svg"
-import JQueryLogo from "../../assets/imgs/logos/JQuery-logo.svg"
-import TailwindLogo from "../../assets/imgs/logos/Tailwind-logo.svg"
-import VuetifyLogo from "../../assets/imgs/logos/Vuetify-logo.svg"
-import GitLogo from "../../assets/imgs/logos/Git-logo.svg"
-import BootstrapLogo from "../../assets/imgs/logos/Bootstrap-logo.svg"
-import NuxtLogo from "../../assets/imgs/logos/Nuxt-logo.svg"
-import VuexLogo from "../../assets/imgs/logos/Vuex-logo.png"
-// import AxiosLogo from "../../assets/imgs/logos/Axios-logo.svg"
-import TypescriptLogo from "../../assets/imgs/logos/Typescript-logo.svg"
-import ReactLogo from "../../assets/imgs/logos/React-logo.svg"
-
+/**
+ * Languages logos
+ */
 import USABanner from "../../assets/imgs/logos/USA-banner.svg"
 import SpainBanner from "../../assets/imgs/logos/Spain-banner.svg"
 
@@ -143,6 +128,20 @@ const projects = [
             'MySQL'
         ]
     },
+    {
+        name: 'Secretaría de Carabobo (Web APP y Sitio Administrador)',
+        image: PrivateThumb,
+        domain: '',
+        url: '',
+        technologies: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'PHP',
+            'Laravel',
+            'MySQL'
+        ]
+    },
 
 ]
 
@@ -176,7 +175,7 @@ const experience = {
     "content": [
         "Desarrollo Web en Frontend y Backend.",
         "Administración de proyecto en equipos de hasta 3 personas y solo (levantamiento de requerimientos, planificación, ejecución, etc).",
-        "Cumplir con el equipo de diseño y lo que desean presentar.",
+        "Implementar el diseño del equipo de diseño, cumpliendo su expectativa.",
         "Trabajo remoto.",
         "Outsourcing.",
         "Trabajo con el equipo de multiples empresas y equipo interno de manera coordinada.",

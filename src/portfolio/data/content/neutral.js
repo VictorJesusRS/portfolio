@@ -15,6 +15,7 @@ import VuexLogo from "../../assets/imgs/logos/Vuex-logo.png"
 // import AxiosLogo from "../../assets/imgs/logos/Axios-logo.svg"
 import TypescriptLogo from "../../assets/imgs/logos/Typescript-logo.svg"
 import ReactLogo from "../../assets/imgs/logos/React-logo.svg"
+import ReduxLogo from "../../assets/imgs/logos/Redux-logo.svg"
 
 import LinkedInLogo from "../../assets/imgs/logos/LinkedIn-logo.svg"
 import TwitterLogo from "../../assets/imgs/logos/Twitter-logo.svg"
@@ -106,6 +107,10 @@ const learning = [
     {
         name: 'React.js',
         image: ReactLogo,
+    },
+    {
+        name: 'Redux',
+        image: ReduxLogo,
     },
 ]
 
