@@ -238,9 +238,12 @@ function ResumeTemplate( props )
         document.body.classList.add('overflow-hidden')
     }
 
-    const closeModal = () => {
-        setShowModal( false )
-        document.body.classList.remove('overflow-hidden')
+    const closeModal = ( e ) => {
+        if (e.currentTarget === e.target) {
+            setShowModal( false )
+            document.body.classList.remove('overflow-hidden')
+        }
+       
     }
     
     return (

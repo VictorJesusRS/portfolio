@@ -26,7 +26,20 @@ const projects = [
             'CSS',
             'JavaScript',
             'React.js'
-        ]
+        ],
+        detail: {
+            images: [
+                PortafolioThumb,
+                FiltrosRamirezThumb,
+                QoonterAppThumb,
+            ],
+            description: [
+                'Portfolio where some web development projects made are show, also some information about the creator or participant on it.',
+                'Done after watching a basic  tutorial about a TODO Machine.',
+                'It’s planned to continue its development applying the knowledge obtained in the coming courses to take; related to React.js, Redux and SASS.',
+                'Own web design.',
+            ]
+        }
     },
     {
         name: 'Fletamos (Admin Site)',
@@ -37,7 +50,17 @@ const projects = [
             'PHP',
             'Laravel',
             'MySQL',
-        ]
+        ],
+        detail: {
+            images: [
+                PrivateThumb,
+            ],
+            description: [
+                'Web APP in charge of some administrative processes, support tickets, validation of user information, vehicles, containers, payments, data collection of APP usage (Android and IOS) and it’s presentation with charts.',
+                'Developed initially with my own basic design, and later expanded, and improved by the design team.',
+                'It’s dependent on another project, Fletamos (Backend), from where all the data is obtained using  an API.',
+            ]
+        }
     },
     {
         name: 'Fletamos (Backend)',
@@ -48,7 +71,15 @@ const projects = [
             'PHP',
             'Laravel',
             'MySQL',
-        ]
+        ],
+        detail: {
+            images: [
+                PrivateThumb,
+            ],
+            description: [
+                'Api done to manage and provide information to the different Frontends ( APPs, Web, etc). Oriented to the transport and shipping sector. Participated on the development of the payments system through multiple providers, support tickets, chat, billing, among other minor and routine  functions, such as the creation of Test, Seeders, Factories, etc.',
+            ]
+        }
     },
     {
         name: 'Qoonter (Web App)',
@@ -60,7 +91,16 @@ const projects = [
             'CSS',
             'JavaScript',
             'Vue.js',
-        ]
+        ],
+        detail: {
+            images: [
+                QoonterAppThumb,
+            ],
+            description: [
+                'Web APP oriented to the finance and accounting sector. In charge of carrying out various operations such as making payments, accounts, billing; in short, routine operations of a company with an accountant. This APP\'s target audience is accountants.',
+                'The Frontend of the sales system was developed and the Backend was made entirely by another team. It has a multi-level user system. The communication was done through API.',
+            ]
+        }
     },
     {
         name: 'Prisma Agencia Creativa (Admin Site)',
@@ -74,7 +114,15 @@ const projects = [
             'PHP',
             'Laravel',
             'MySQL'
-        ]
+        ],
+        detail: {
+            images: [
+                PrivateThumb,
+            ],
+            description: [
+                'Content management system for the project Prisma Agencia Creativa (Web Site).',
+            ]
+        }
     },
     {
         name: 'Prisma Agencia Creativa (Web Site)',
@@ -86,7 +134,16 @@ const projects = [
             'SASS',
             'TypeScript',
             'Angular',
-        ]
+        ],
+        detail: {
+            images: [
+                PrismaWebThumb,
+            ],
+            description: [
+                'Informative website made for an advertising agency, where they present relevant information about the company, and its projects.',
+                'Design made by the design team.',
+            ]
+        }
     },
     {
         name: 'Filtros Rámirez (E-commerce)',
@@ -100,7 +157,16 @@ const projects = [
             'PHP',
             'Laravel',
             'MySQL'
-        ]
+        ],
+        detail: {
+            images: [
+                FiltrosRamirezThumb,
+            ],
+            description: [
+                'E-commerce for the sale of filters and other components for engines and vehicles. Own design under the client\'s guidelines.',
+                'Out of line.',
+            ]
+        }
     },
     {
         name: 'Gettford C.A. (E-commerce)',
@@ -113,7 +179,15 @@ const projects = [
             'JavaScript',
             'PHP',
             'MySQL'
-        ]
+        ],
+        detail: {
+            images: [
+                GettfordEcommerceThumb,
+            ],
+            description: [
+                'E-commerce for the sale of radios and other telecommunications equipment. Template used for design.',
+            ]
+        }
     },
     {
         name: 'Gettford C.A. (Admin Site)',
@@ -126,7 +200,15 @@ const projects = [
             'JavaScript',
             'PHP',
             'MySQL'
-        ]
+        ],
+        detail: {
+            images: [
+                PrivateThumb,
+            ],
+            description: [
+                'Pre-existing web APP to which the sales and collection areas were improved.',
+            ]
+        }
     },
     {
         name: 'Secretaría de Carabobo (Web APP and Admin Site)',
@@ -140,7 +222,16 @@ const projects = [
             'PHP',
             'Laravel',
             'MySQL'
-        ]
+        ],
+        detail: {
+            images: [
+                PrivateThumb,
+            ],
+            description: [
+                'Web APP made in order to digitize all the administrative processes of the Secretary of Education of Carabobo. For example: registration of payments, attendance, permits, rest, salary assignments, application management, registration of personal information, school assignments, among others.',
+                'Offline, due to change of administration of the Secretariat.',
+            ]
+        }
     },
 
 ]

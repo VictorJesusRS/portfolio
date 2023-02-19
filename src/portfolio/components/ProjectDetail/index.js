@@ -67,7 +67,7 @@ function ProjectDetail ( {
                             {
                                 !project.domain &&
                                 <div>
-                                    Dominio fuera de línea
+                                    Fuera de línea
                                 </div>
                             }
                             
@@ -114,7 +114,9 @@ function ProjectDetail ( {
             <div className="d-flex justify-content-center align-items-center">
                 <button 
                 className="btn btn-close default-transition bold fs-6"
-                onClick={ closeModal }
+                onClick={ ( e ) => {
+                    closeModal( e )
+                }}
                 >
                     Cerrar
                 </button>
