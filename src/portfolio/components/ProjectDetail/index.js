@@ -20,7 +20,7 @@ function ProjectDetail ( {
             </div>
             <div className="project-areas ">
                 <div className="project-images-area">
-                   <div className="project-images-list d-flex flex-column align-items-center gap-4">
+                   <div className="project-images-list gap-4">
                         {
                             project.detail.images.map( ( image, index ) => {
                                 return <img 

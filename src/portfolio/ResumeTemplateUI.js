@@ -374,12 +374,9 @@ function ResumeTemplateUI( {
                                     return (
                                         <div 
                                         key={`project-${ index }`}
-                                        className="project cursor-default">
+                                        className="project cursor-pointer">
                                             <div
-                                            href={  `${ project.url ? 'http://'+project.url : ''}` }
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className={ `${ project.url ? '' : 'cursor-default'} d-flex flex-column justify-content-between h-100 ` }
+                                            className={ `d-flex flex-column justify-content-between h-100 ` }
                                             onClick = { () => {
                                                 showProjectDetail( index )
                                             }}

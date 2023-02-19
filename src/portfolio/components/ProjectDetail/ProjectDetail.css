@@ -6,23 +6,61 @@
     margin: auto;
     padding: 1rem 2rem 2rem 2rem;
     border-radius: 1rem;
+    overflow-y: auto;
     
 }
 
-.project-detail .project-areas {
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr );
+@media screen and (min-width: 1300px) {
+    .project-detail .project-areas {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+    }
+    
 }
 
-.project-detail .project-images-area{
-    display: grid;
-    grid-template-columns: repeat( 5, 1fr );
-    grid-column: 1/3;
+@media screen and (max-width: 1300px) {
+    .project-detail .project-areas {
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr );
+    }
+    
 }
 
-.project-detail .project-images-list{
-    padding: 0 1rem 1rem 1rem;
+@media screen and (min-width: 1300px) {
+    .project-detail .project-images-area{
+        display: grid;
+        grid-template-columns: repeat( 5, 1fr );
+        grid-column: 1/3;
+    }
 }
+
+@media screen and (max-width: 1300px) {
+    .project-detail .project-images-area{
+        display: grid;
+        grid-template-columns: repeat( 1, 1fr );
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .project-detail .project-images-list{
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .project-detail .project-images-list{
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+
 
 .project-detail .project-images-list img{
     width: 10rem;
@@ -30,10 +68,20 @@
     border-radius: .5rem;
 }
 
-.project-detail .project-images-area .fadding-images {
-    position: relative;
-    grid-column: 2/6;
+@media screen and (min-width: 1300px) {
+    .project-detail .project-images-area .fadding-images {
+        position: relative;
+        grid-column: 2/6;
+    }
 }
+
+@media screen and (max-width: 1300px) {
+    .project-detail .project-images-area .fadding-images {
+        position: relative;
+        padding: 1rem;
+    }
+}
+
 
 .project-detail .project-text-area {
     padding: 0 1rem 1rem 1rem;
@@ -82,6 +130,12 @@
     border-radius: .25rem;
     text-align: center;
     box-shadow: 0rem .15rem .25rem var(--sixth-color);
+}
+
+@media screen and (max-width: 1300px) {
+    .project-detail .btn-close {
+        margin-top: 1rem;
+    }
 }
 
 .project-detail .btn-close:hover {

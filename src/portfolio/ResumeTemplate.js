@@ -235,10 +235,12 @@ function ResumeTemplate( props )
     const showProjectDetail = ( index ) => {
         setCurrentProjectDetail( projects[ index ] )
         setShowModal( true )
+        document.body.classList.add('overflow-hidden')
     }
 
     const closeModal = () => {
         setShowModal( false )
+        document.body.classList.remove('overflow-hidden')
     }
     
     return (
