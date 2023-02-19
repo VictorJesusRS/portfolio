@@ -2,6 +2,8 @@ import React from "react";
 import "../portfolio/ResumeTemplate.css";
 import Avatar from "./assets/imgs/avatar.jpg"
 import CopyIcon from "./assets/imgs/icons/copy.svg"
+import { Modal } from  "./components/Modal"
+import { ProjectDetail } from  "./components/ProjectDetail"
 
 function ResumeTemplateUI( {
     isPortfolio,
@@ -19,6 +21,10 @@ function ResumeTemplateUI( {
     content,
     changeToLanguage,
     contactOnClick, 
+    showModal,
+    currentProjectDetail,
+    showProjectDetail,
+    closeModal
 } ){
 
     return (
@@ -369,11 +375,14 @@ function ResumeTemplateUI( {
                                         <div 
                                         key={`project-${ index }`}
                                         className="project cursor-default">
-                                            <a
+                                            <div
                                             href={  `${ project.url ? 'http://'+project.url : ''}` }
                                             target="_blank"
                                             rel="noreferrer"
                                             className={ `${ project.url ? '' : 'cursor-default'} d-flex flex-column justify-content-between h-100 ` }
+                                            onClick = { () => {
+                                                showProjectDetail( index )
+                                            }}
                                             >
                                                 <div className="fs-4 bold text-center">
                                                     { project.name }
@@ -399,7 +408,7 @@ function ResumeTemplateUI( {
                                                         } )
                                                     }
                                                 </div>
-                                            </a>
+                                            </div>
                                         </div>
                                     )
                                 })
@@ -426,6 +435,18 @@ function ResumeTemplateUI( {
             <footer>
 
             </footer>
+            {
+                showModal &&
+                <Modal
+                closeModal = { closeModal }
+                >
+                    <ProjectDetail
+                        project = { currentProjectDetail }
+                        content = { content }
+                    />
+                </Modal>
+            }
+            
         </React.Fragment>
     )
 }

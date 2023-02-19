@@ -1,0 +1,90 @@
+.project-detail {
+    background-color: var(--third-color);
+    min-width: 50vw;
+    max-width:  90vw;
+    max-height: 90vh;
+    margin: auto;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 1rem;
+    
+}
+
+.project-detail .project-areas {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+}
+
+.project-detail .project-images-area{
+    display: grid;
+    grid-template-columns: repeat( 5, 1fr );
+    grid-column: 1/3;
+}
+
+.project-detail .project-images-list{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.project-detail .project-images-list img{
+    width: 10rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.project-detail .project-images-area .fadding-images {
+    position: relative;
+    grid-column: 2/6;
+}
+
+.project-detail .project-text-area {
+    padding: 0 1rem 1rem 1rem;
+    overflow: scroll;
+    min-height: 50vh;
+    max-height: 76vh;
+}
+
+.project-detail .project-images-area .fadding-images img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-detail .project-detail-technologies {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+}
+
+.project-detail .project-detail-technologies .tags {
+    background-color: var(--fourth-color);
+    border-radius: .25em;
+    padding: .25em .5em;
+    color: var(--main-color);
+    transition: ease .4s;
+    -o-transition: ease .4s;
+    -moz-transition: ease .4s;
+    -webkit-transition: ease .4s;
+}
+.project-detail .project-detail-domain a {
+    display: inline-block;
+    text-decoration: underline;
+}
+.project-detail .project-detail-domain a:hover {
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+}
+
+.project-detail .btn-close {
+    color: var(--third-color);
+    background-color: var(--main-color);
+    padding: 0 2em;
+    width: 15em;
+    height: 2.5em;
+    border-radius: .25rem;
+    text-align: center;
+    box-shadow: 0rem .15rem .25rem var(--sixth-color);
+}
+
+.project-detail .btn-close:hover {
+    color: var(--main-color);
+    background-color: var(--fourth-color);
+}

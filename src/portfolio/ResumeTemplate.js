@@ -228,6 +228,19 @@ function ResumeTemplate( props )
         portfolioSearch( searchParams )
     }, [ languages, searchParams, portfolioSearch ])
 
+    const [ showModal, setShowModal ] = React.useState(false)
+    const [ currentProjectDetail, setCurrentProjectDetail ] = React.useState({})
+
+    console.log( showModal )
+    const showProjectDetail = ( index ) => {
+        setCurrentProjectDetail( projects[ index ] )
+        setShowModal( true )
+    }
+
+    const closeModal = () => {
+        setShowModal( false )
+    }
+    
     return (
         <ResumeTemplateUI
             isPortfolio={ isPortfolio }
@@ -245,6 +258,10 @@ function ResumeTemplate( props )
             content= { content }
             changeToLanguage= { changeToLanguage }
             contactOnClick = { contactOnClick }
+            showModal = { showModal }
+            currentProjectDetail = { currentProjectDetail }
+            showProjectDetail = { showProjectDetail }
+            closeModal = { closeModal }
         />
     );
 }

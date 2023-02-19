@@ -26,7 +26,19 @@ const projects = [
             'CSS',
             'JavaScript',
             'React.js'
-        ]
+        ],
+        detail: {
+            images: [
+                PortafolioThumb,
+                FiltrosRamirezThumb,
+                QoonterAppThumb,
+            ],
+            description: [
+                'Sitio destinado a la presentación de los proyectos hechos o se haya tenido participación. Así como tambien un resumen de mi persona como desarrollador y conocimientos actuales.',
+                'Proyecto hecho para prácticar los conocimientos aprendidos en React.js, luego de tomar un curso básico para realizar un TODO Machine',
+                'Se estará actualizando a medida que se adquieran más conocimientos. Como el manejo de estado con Redux.'
+            ]
+        }
     },
     {
         name: 'Fletamos (Sitio Administrador)',
@@ -196,6 +208,8 @@ const menuTexts = {
 const siteSubTitles = {
     "technologies": "Tecnologías",
     "learning": "Aprendiendo",
+    "description": "Descripción",
+    "domain": "Dominio"
 }
 
 const spanishContent = {

@@ -194,6 +194,8 @@ const menuTexts = {
 const siteSubTitles = {
     "technologies": "Technologies",
     "learning": "Learning",
+    "description": "Description",
+    "domain": "Domain"
 }
 
 const englishContent = {
