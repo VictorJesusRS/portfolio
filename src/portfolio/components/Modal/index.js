@@ -1,11 +1,10 @@
 import ReactDOM from "react-dom";
 import "./Modal.css";
 
-function Modal( { children, closeModal }) {
+function Modal( { children }) {
   
     return ( ReactDOM.createPortal(
         <div 
-        onClick={ closeModal }
         className="modal-background d-flex align-items-center justify-content-center color-main">
             { children }
         </div>,

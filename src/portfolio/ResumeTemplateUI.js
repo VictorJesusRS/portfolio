@@ -443,6 +443,7 @@ function ResumeTemplateUI( {
                     <ProjectDetail
                         project = { currentProjectDetail }
                         content = { content }
+                        closeModal = { closeModal }
                     />
                 </Modal>
             }

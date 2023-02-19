@@ -4,6 +4,7 @@ import "./ProjectDetail.css";
 function ProjectDetail ( { 
     project,
     content, 
+    closeModal,
 }) {
 
     const [ imagenShowed, setImageShowed ] = React.useState( project.detail.images[0] )
@@ -111,9 +112,12 @@ function ProjectDetail ( {
                 </div>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                        <button className="btn btn-close default-transition bold fs-6">
-                            Cerrar
-                        </button>
+                <button 
+                className="btn btn-close default-transition bold fs-6"
+                onClick={ closeModal }
+                >
+                    Cerrar
+                </button>
             </div>
         </div>
     )
