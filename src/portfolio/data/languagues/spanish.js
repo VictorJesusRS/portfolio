@@ -276,7 +276,7 @@ const experience = {
 
 const role = "Desarrollador Web"
 const contactText = "Contáctame"
-const contactMail = "victor5rivas5@gmail.com"
+const contactMail = "victorrsdevelop@gmail.com"
 
 const menuTexts = {
     "home": "Inicio",
