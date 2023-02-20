@@ -212,16 +212,30 @@ function ResumeTemplate( props )
     }
 
     const contactOnClick = ( currentTarget ) => {
-        //currentTarget.firstChild.innerHTML = mail
-         currentTarget.firstChild.setAttribute('hidden', true)
-        // currentTarget.children[1].classList.add('opacity-1')
-        // currentTarget.children[1].classList.remove('opacity-0')
-        let sibling = currentTarget.nextElementSibling
-        sibling.classList.remove('position-absolute')
-        sibling.classList.add('opacity-1')
-        sibling.classList.remove('opacity-0')
-        sibling.classList.remove('z-index-negative-1')
-        navigator.clipboard.writeText( sibling.firstChild.innerHTML )
+
+        if ([...currentTarget.classList].includes( 'contact-mail')) {
+
+            let sibling = currentTarget
+            navigator.clipboard.writeText( sibling.firstChild.innerHTML )
+            sibling.firstChild.innerHTML = 'Copiado'
+
+            setTimeout(() => {
+                sibling.firstChild.innerHTML = content.contactMail
+            }, 1000);
+
+        }else{
+
+            currentTarget.firstChild.setAttribute('hidden', true)
+
+            let sibling = currentTarget.nextElementSibling
+            sibling.classList.remove('position-absolute')
+            sibling.classList.add('opacity-1')
+            sibling.classList.remove('opacity-0')
+            sibling.classList.remove('z-index-negative-1')
+            
+        }
+        
+
     }
 
     React.useEffect( () => {

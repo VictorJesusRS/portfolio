@@ -104,22 +104,23 @@ function ResumeTemplateUI( {
                             </div>
                             <div className="d-flex justify-content-around align-items-center ">
                                 <a 
-                                        
                                 href={`mailto:${content.contactMail}`} 
                                 target="_blank" 
                                 rel="noreferrer"
                                 onClick={ ( e ) => {
                                     contactOnClick( e.currentTarget )
                                 }}
-                                
                                 >
                                     <button className="btn header-btn bold"> 
                                         { content.contactText} 
                                     </button>
                                 </a>
                                 <div
-                                    className="position-absolute z-index-negative-1 gap-1 bold fs-6 contact-mail d-flex justify-content-center align-items-center default-transition opacity-0"
                                     
+                                    className="position-absolute z-index-negative-1 gap-1 bold fs-6 contact-mail d-flex justify-content-center align-items-center default-transition opacity-0"
+                                    onClick={ ( e ) => {
+                                        contactOnClick( e.currentTarget )
+                                    }}
                                     >
                                         <span>
                                             { content.contactMail}
@@ -208,7 +209,9 @@ function ResumeTemplateUI( {
                                     </a>
                                     <div
                                     className="position-absolute z-index-negative-1 gap-1 bold fs-6 contact-mail d-flex justify-content-center align-items-center default-transition opacity-0"
-                                    
+                                    onClick={ ( e ) => {
+                                        contactOnClick( e.currentTarget )
+                                    }}
                                     >
                                         <span>
                                             { content.contactMail}
