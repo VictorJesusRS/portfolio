@@ -93,6 +93,7 @@
 .project-detail .project-images-area .fadding-images img {
     width: 100%;
     object-fit: contain;
+    max-height: 64vh;
 }
 
 .project-detail .project-detail-technologies {

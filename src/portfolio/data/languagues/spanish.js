@@ -30,8 +30,6 @@ const projects = [
         detail: {
             images: [
                 PortafolioThumb,
-                FiltrosRamirezThumb,
-                QoonterAppThumb,
             ],
             description: [
                 'Portafolio donde se muestran algunos proyectos de desarrollo web realizados, además de información sobre su creador o participante.',
