@@ -287,6 +287,10 @@ const siteSubTitles = {
     "domain": "Domain"
 }
 
+const words = {
+    "copied": "Copied"
+}
+
 const englishContent = {
     "projects": projects,
     "languages": languages,
@@ -297,5 +301,6 @@ const englishContent = {
     "menuTexts": menuTexts,
     "siteSubTitles": siteSubTitles,
     "contactMail": contactMail,
+    "words": words,
 }
 export { englishContent }

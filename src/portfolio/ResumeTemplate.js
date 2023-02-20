@@ -217,7 +217,7 @@ function ResumeTemplate( props )
 
             let sibling = currentTarget
             navigator.clipboard.writeText( sibling.firstChild.innerHTML )
-            sibling.firstChild.innerHTML = 'Copiado'
+            sibling.firstChild.innerHTML = content.words.copied
 
             setTimeout(() => {
                 sibling.firstChild.innerHTML = content.contactMail
@@ -232,7 +232,7 @@ function ResumeTemplate( props )
             sibling.classList.add('opacity-1')
             sibling.classList.remove('opacity-0')
             sibling.classList.remove('z-index-negative-1')
-            
+
         }
         
 
