@@ -1,6 +1,6 @@
 import React from "react";
 import "../portfolio/ResumeTemplate.css";
-import Avatar from "./assets/imgs/avatar.jpg"
+import Avatar from "./assets/imgs/avatar.webp"
 import CopyIcon from "./assets/imgs/icons/copy.svg"
 import { Modal } from  "./components/Modal"
 import { ProjectDetail } from  "./components/ProjectDetail"
@@ -126,7 +126,7 @@ function ResumeTemplateUI( {
                                             { content.contactMail}
                                         </span> 
                                         <span>
-                                            <img src={CopyIcon} alt={ `${CopyIcon} icon`}/>                                            
+                                            <img src={CopyIcon} alt={ `${CopyIcon} icon`} loading="lazy"/>                                            
                                         </span>
                                     </div>
                             </div>
@@ -217,7 +217,7 @@ function ResumeTemplateUI( {
                                             { content.contactMail}
                                         </span> 
                                         <span>
-                                            <img src={CopyIcon} alt={ `${CopyIcon} icon`}/>                                            
+                                            <img src={CopyIcon} alt={ `${CopyIcon} icon`} loading="lazy"/>                                            
                                         </span>
                                     </div>
                                 </div>
@@ -273,7 +273,7 @@ function ResumeTemplateUI( {
                                                 <div
                                                     className="d-flex justify-content-around pt-4"
                                                 > 
-                                                    <img src={technology.image} alt={ `${technology.name} logo`}/>
+                                                    <img src={technology.image} alt={ `${technology.name} logo`} loading="lazy"/>
                                                 </div>
                                             </div>;
                                     })
@@ -311,7 +311,7 @@ function ResumeTemplateUI( {
                                                 <div
                                                     className="d-flex justify-content-around pt-4"
                                                 > 
-                                                    <img src={technology.image} alt={ `${technology.name} logo`}/>
+                                                    <img src={technology.image} alt={ `${technology.name} logo`} loading="lazy"/>
                                                 </div>
                                             </div>;
                                     })
@@ -390,7 +390,7 @@ function ResumeTemplateUI( {
                                                 <div
                                                 className="d-flex justify-content-around pt-4"
                                                 >
-                                                    <img src={ project.image } alt={ project.name + " logo" }/>
+                                                    <img src={ project.image } alt={ project.name + " logo" } loading={ (index < 6) ? 'eager' : 'lazy'}/>
                                                 </div>
                                                 <div className="d-grid d-grid-c-2 gap-2 pt-4 ">
                                                     { 

@@ -1,19 +1,19 @@
 /**
  * Languages logos
  */
-import USABanner from "../../assets/imgs/logos/USA-banner.svg"
-import SpainBanner from "../../assets/imgs/logos/Spain-banner.svg"
+import USABanner from "../../assets/imgs/logos/USA-banner.webp"
+import SpainBanner from "../../assets/imgs/logos/Spain-banner.webp"
 
 /**
  * Projects imgs
  */
-import QoonterAppThumb from "../../assets/imgs/projects/Qoonter (Web App)/thumb.png"
-import PrismaWebThumb from "../../assets/imgs/projects/Prisma Agencia Creativa (Web Site)/thumb.png"
-import GettfordEcommerceThumb from "../../assets/imgs/projects/Gettford C.A. (E-commerce)/thumb.png"
-import PortafolioThumb from "../../assets/imgs/projects/Portfolio/thumb.png"
-import FiltrosRamirezThumb from "../../assets/imgs/projects/Filtros Rámirez (Tienda En Línea)/thumb.png"
+import QoonterAppThumb from "../../assets/imgs/projects/Qoonter (Web App)/thumb.webp"
+import PrismaWebThumb from "../../assets/imgs/projects/Prisma Agencia Creativa (Web Site)/thumb.webp"
+import GettfordEcommerceThumb from "../../assets/imgs/projects/Gettford C.A. (E-commerce)/thumb.webp"
+import PortafolioThumb from "../../assets/imgs/projects/Portfolio/thumb.webp"
+import FiltrosRamirezThumb from "../../assets/imgs/projects/Filtros Rámirez (Tienda En Línea)/thumb.webp"
 
-import PrivateThumb from "../../assets/imgs/icons/ban-outline.svg"
+import PrivateThumb from "../../assets/imgs/icons/ban-outline.webp"
 
 const projects = [
     {

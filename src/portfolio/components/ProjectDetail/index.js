@@ -30,6 +30,7 @@ function ProjectDetail ( {
                                     onClick={ () => {
                                         changeImagenShowed( index )
                                     }}
+                                    loading="lazy"
                                 />
                             })
                         }
@@ -41,6 +42,7 @@ function ProjectDetail ( {
                         className="image-showed"
                         src={ imagenShowed } 
                         alt={ `${project.name} imagen`}
+                        loading="lazy"
                         />
                         
                    </div>

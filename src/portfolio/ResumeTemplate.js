@@ -1,35 +1,7 @@
 import React from "react";
 import { ResumeTemplateUI } from "./ResumeTemplateUI";
-
-// import JavascriptLogo from "../resources/imgs/logos/JavaScript-logo.svg"
-// import VueLogo from "../resources/imgs/logos/Vue-logo.svg"
-// import PHPLogo from "../resources/imgs/logos/PHP-logo.svg"
-// import LaravelLogo from "../resources/imgs/logos/Laravel-logo.svg"
-// import MySQLLogo from "../resources/imgs/logos/MySQL-logo.svg"
-// import CSSLogo from "../resources/imgs/logos/CSS-logo.svg"
-// import HTMLLogo from "../resources/imgs/logos/HTML-logo.svg"
-// import JQueryLogo from "../resources/imgs/logos/JQuery-logo.svg"
-// import TailwindLogo from "../resources/imgs/logos/Tailwind-logo.svg"
-// import VuetifyLogo from "../resources/imgs/logos/Vuetify-logo.svg"
-// import GitLogo from "../resources/imgs/logos/Git-logo.svg"
-// import BootstrapLogo from "../resources/imgs/logos/Bootstrap-logo.svg"
-// import NuxtLogo from "../resources/imgs/logos/Nuxt-logo.svg"
-// import VuexLogo from "../resources/imgs/logos/Vuex-logo.png"
-// // import AxiosLogo from "../resources/imgs/logos/Axios-logo.svg"
-// import TypescriptLogo from "../resources/imgs/logos/Typescript-logo.svg"
-// import ReactLogo from "../resources/imgs/logos/React-logo.svg"
-
-// import LinkedInLogo from "../resources/imgs/logos/LinkedIn-logo.svg"
-// import TwitterLogo from "../resources/imgs/logos/Twitter-logo.svg"
-// //import InstagramLogo from "../resources/imgs/logos/Instagram-logo.svg"
-
-// import USABanner from "../resources/imgs/logos/USA-banner.svg"
-// import SpainBanner from "../resources/imgs/logos/Spain-banner.svg"
-
-
 import { spanishContent } from "./data/languagues/spanish"
 import { englishContent } from "./data/languagues/english"
-
 import { neutralContent } from "./data/content/neutral"
 
 function ResumeTemplate( props )
