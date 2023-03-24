@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9aefee16.css",
-    "main.js": "/portfolio/static/js/main.5ff9822d.js",
+    "main.css": "/portfolio/static/css/main.687327d7.css",
+    "main.js": "/portfolio/static/js/main.9ad84d8c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/thumb.webp": "/portfolio/static/media/thumb.d3bf26b175e2f7cbdb97.webp",
     "static/media/avatar.webp": "/portfolio/static/media/avatar.802dc7d90523ebb94aef.webp",
@@ -21,20 +21,20 @@
     "static/media/Vuetify-logo.webp": "/portfolio/static/media/Vuetify-logo.e7ebe8e32bd797a16d35.webp",
     "static/media/Vue-logo.webp": "/portfolio/static/media/Vue-logo.9f336bf3855118c33331.webp",
     "static/media/Typescript-logo.webp": "/portfolio/static/media/Typescript-logo.fb02099caa95806ca4dc.webp",
-    "static/media/Twitter-logo.webp": "/portfolio/static/media/Twitter-logo.9b1fc98e4173d7df6fe1.webp",
     "static/media/Redux-logo.webp": "/portfolio/static/media/Redux-logo.73a338b28d30079f1007.webp",
+    "static/media/Twitter-logo.webp": "/portfolio/static/media/Twitter-logo.2642f3500322644f016d.webp",
     "static/media/LinkedIn-logo.webp": "/portfolio/static/media/LinkedIn-logo.199fdc059ac91faecb77.webp",
     "static/media/React-logo.webp": "/portfolio/static/media/React-logo.d3b3120a71f6c3e8f165.webp",
     "static/media/Laravel-logo.webp": "/portfolio/static/media/Laravel-logo.46990b23a62031e9669f.webp",
     "static/media/Git-logo.webp": "/portfolio/static/media/Git-logo.2a0eed6ac1da9388edaf.webp",
     "static/media/copy.svg": "/portfolio/static/media/copy.b2b0ec637a2b0fd4ca405a591c0d076e.svg",
     "index.html": "/portfolio/index.html",
-    "main.9aefee16.css.map": "/portfolio/static/css/main.9aefee16.css.map",
-    "main.5ff9822d.js.map": "/portfolio/static/js/main.5ff9822d.js.map",
+    "main.687327d7.css.map": "/portfolio/static/css/main.687327d7.css.map",
+    "main.9ad84d8c.js.map": "/portfolio/static/js/main.9ad84d8c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aefee16.css",
-    "static/js/main.5ff9822d.js"
+    "static/css/main.687327d7.css",
+    "static/js/main.9ad84d8c.js"
   ]
 }
