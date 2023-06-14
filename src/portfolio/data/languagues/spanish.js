@@ -243,7 +243,7 @@ const languages = [
         isActive: false,
     },
     {
-        name: 'Inglés ( B1 )',
+        name: 'Inglés ( C1 )',
         image: USABanner,
         tag: 'english',
         isActive: false,
@@ -253,10 +253,10 @@ const languages = [
 const about = {
     "title": "Acerca de mi",
     "content": [
-        "Soy un Desarrollador Web PHP con 4 años de experiencia creando Apps Web para la administración de personal, contabilidad e inventario, e-commerce, y microservicios.",
-        "Mi trabajo se caracteriza por la atención al detalle de lo solicitado por cada cliente. Mi habilidad para adaptarme al rubro o dominio en el que será usado el software, y asi brindar resultados más allá de solo construir un software.",
-        "A nivel personal soy taciturno, responsable, autodidacta, curioso de muchos temas, directo, acostumbrado al trabajo en equipo y remoto, con un buen desempeño sin mucha supervición.",
-        "Si tienes interés en trabajar conmigo:",
+        "Soy un desarrollador full stack con 4 años de experiencia. Ayudo y facilito el trabajo de empresas y trabajadores con el desarrollo de software; principalmente del modelo Saas, y de administración de pequeñas y medianas empresas.",
+        "Soy una persona metódica, orientada a objetivos y un planificador. De igual modo, cuento con buena autonomía, y adaptabilidad en el trabajo. También estoy constante aprendizaje sobre el oficio para hacer y ser mejor.",
+        "Cuento con: Zelle, Paypal, Binance.",
+        "Si tienes interés en deserrollar software conmigo:",
     ]
 }
 

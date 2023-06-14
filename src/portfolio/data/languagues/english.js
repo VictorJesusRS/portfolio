@@ -241,7 +241,7 @@ const languages = [
         tag: 'spanish',
     },
     {
-        name: 'English ( B1 )',
+        name: 'English ( C1 )',
         image: USABanner,
         tag: 'english',
     },
@@ -250,10 +250,10 @@ const languages = [
 const about = {
     "title": "About me",
     "content": [
-        "I am a PHP Web Developer with 4 years of experience creating Web Apps for personnel management, accounting and inventory, e-commerce, and microservices.",
-        "My work is characterized by the attention to detail of what is requested by each client. My ability to adapt to the field or domain in which the software will be used, and thus provide results beyond just building software.",
-        "On a personal level, I am taciturn, responsible, self-taught, curious about many topics, direct, accustomed to teamwork and remote, with a good performance without much supervision.",
-        "If you are interested in working with me:",
+        "I am a full stack developer with 4 years of experience. I help and facilitate the work of companies and workers with software development; mainly the Saas model, and the administration of small and medium-sized companies.",
+        "I am a methodical person, goal oriented and a planner. In the same way, I have good autonomy and adaptability at work. I'm also constantly learning about the job to do and be better.",
+        "I have: Zelle, Paypal, Binance.",
+        "If you are interested in develop software with me:",
     ]
 }
 

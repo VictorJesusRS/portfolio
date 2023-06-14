@@ -444,7 +444,7 @@ header .social-network:hover {
 }
 
 header .social-network img {
-    /* width: 2em; */
+    width: 2em;
     height: 2em;
 } 
 
